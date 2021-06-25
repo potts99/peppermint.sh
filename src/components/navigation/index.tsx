@@ -15,19 +15,19 @@ type Link = {
 const links = [
   {
     label: `Github`,
-    href: `/`,
+    href: `https://github.com/Peppermint-Lab`,
   },
   {
     label: `About Us`,
-    href: `/`,
+    href: `#about`,
   },
   {
     label: `Projects`,
-    href: `/`,
+    href: `#projects`,
   },
   {
     label: `Blog`,
-    href: `/`,
+    href: `https://docs.peppermint.sh/blog`,
   },
 ];
 
@@ -38,7 +38,7 @@ const secondaryLinks = [
   },
   {
     label: `Get Started`,
-    href: `/`,
+    href: `https://docs.peppermint.sh/`,
   },
 ];
 

@@ -12,17 +12,14 @@ import Footer from '@/components/footer';
 export default function Home() {
   return (
     <Page>
-      <NextSeo
-        title="Peppermint Labs"
-        description="The Landing Page for Peppermint Labs, creator of software :)"
-      />
+      <NextSeo title="Peppermint Labs" description="The Landing Page for Peppermint Labs, creator of software :)" />
       <Header />
       <main>
         <VideoSection />
         <ListSection />
         <FeatureSection />
         <CasesSection />
-        <SocialProof />
+        {/* <SocialProof /> */}
       </main>
       <Footer />
     </Page>

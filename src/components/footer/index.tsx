@@ -1,8 +1,8 @@
 import { tw } from 'twind';
 import Button from '@/components/button';
 
-const productLinks = [`Peppermint`, ];
-const aboutLinks = [`About Us`, `Blog`, ];
+const productLinks = [`Peppermint`, `Joy`];
+const aboutLinks = [`About Us`, `Blog`];
 const resourceLinks = [
   `Get started`,
   `documentation`,

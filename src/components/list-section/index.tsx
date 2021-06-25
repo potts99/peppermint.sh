@@ -3,32 +3,36 @@ import FeatureSvg from '@/constants/svg/features.svg';
 
 const listItems = [
   {
-    title: `Designers`,
-    description: `Officia et fugiat mollit qui. Dolor elit aliqua voluptate ipsum
-    excepteur cillum consequat consectetur duis magna qui eu consequat occaecat.
-    Deserunt nisi sit.`,
+    title: `Mobile Development`,
+    description: `Ios & Andriod development using react native for quicker development 
+    and a mono code base for more efficient development time. 
+    An example of this is the joy recipe app.`,
   },
   {
-    title: `Developers`,
-    description: `Pariatur consectetur laboris exercitation duis laboris.
-    Commodo duis fugiat magna fugiat et ut anim elit. Tempor aute ex qui
-    tempor tempor.`,
+    title: `Application Development`,
+    description: `Web Apps built with the latest technologys, 
+    focusing on design and speed 
+    for the best expierance an end user can have.`,
   },
   {
-    title: `Product owners`,
-    description: `Ullamco consectetur ipsum eiusmod nisi adipisicing sint anim
-    dolore aute excepteur. Voluptate ea ullamco sunt eu elit qui aliquip.
-    Adipisicing.`,
+    title: `Landing Pages and Web Design`,
+    description: `Sleek, Modern web development to give your,
+    company a landing page that brings in customers, 
+    focusing on SEO best practices for 
+    oppitmum search engine indexing. 
+    This allows you to gain an advantage over your competition
+    by showing up higher when a potential customer 
+    searches for you.`,
   },
 ];
 
 const ListSection = () => (
-  <section className={tw(`lg:py-28 pt-28 overflow-hidden`)}>
+  <section className={tw(`lg:py-28 pt-28 overflow-hidden`)} id="about">
     <div className={tw(`max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white`)}>
       <div className={tw(`mb-16 text-center`)}>
-        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>Grow your revenue</h2>
+        <h2 className={tw(`text-base text-indigo-600 font-semibold tracking-wide uppercase`)}>The work we do</h2>
         <p className={tw(`mt-2 pb-4 text-5xl lg:text-7xl font-bold tracking-tight text-gray-900`)}>
-          Transform your business
+          Solutions for business's and consumers
         </p>
       </div>
       <div className={tw(`flex flex-wrap -mx-8 items-center`)}>

@@ -2,6 +2,8 @@ import { tw } from 'twind';
 import Particles from 'react-particles-js';
 import Arrow from '@/constants/svg/arrow.svg';
 
+import Button from '../button/index';
+
 const ParticleBg = () => (
   <Particles
     params={{
@@ -45,32 +47,29 @@ const ParticleBg = () => (
 
 const articles = [
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur ipsum esse.`,
-    image: `/images/case-1.webp`,
+    title: `Peppermint Ticket Management`,
+    image: `https://raw.githubusercontent.com/Peppermint-Lab/Docs/master/static/img/logo.png`,
     alt: `Proident pariatur est.`,
+    href: `https://docs.peppermint.sh/`,
   },
   {
-    title: `Velit reprehenderit culpa Lorem reprehenderit ipsum esse.`,
-    image: `/images/case-2.webp`,
+    title: `Joy Recipe Management`,
+    image: `https://joy.peppermint.sh/cooking_landing.svg`,
     alt: `Proident pariatur est.`,
-  },
-  {
-    title: `Velit reprehenderit culpa Lorem reprehenderit excepteur esse.`,
-    image: `/images/case-3.webp`,
-    alt: `Proident pariatur est.`,
+    href: `https://joy.peppermint.sh/`,
   },
 ];
 
 const CasesSection = () => (
-  <section>
+  <section id="projects">
     <div className={tw(`w-full min-h-screen bg-gray-900 relative`)}>
       <div className={tw(`absolute left-0 top-0 h-screen w-full overflow-hidden`)}>
         <ParticleBg />
       </div>
       <div className={tw(`max-w-7xl mx-4 lg:mx-auto pt-20 lg:pt-40`)}>
-        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>What will you build?</h1>
+        <h1 className={tw(`text-white text-4xl lg:text-7xl font-bold text-center`)}>What have we built so far?</h1>
         <p className={tw(`text-white text-gray-400 text-center text-xl mt-12`)}>
-          Don’t just take our word for it — see what leaders in digital are saying
+          Don’t just take our word for it — check our demo's to find out more.
         </p>
         <div className={tw(`mx-auto pt-24`)}>
           <div className={tw(`w-full flex flex-wrap justify-around`)}>
@@ -91,13 +90,17 @@ const CasesSection = () => (
                     height={300}
                   />
                 </div>
-                <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 bg-white rounded-b z-30 relative`)}>
-                  <p className={tw(`uppercase text-sm text-gray-700 text-center pb-1`)}>Case study</p>
-                  <p className={tw(`text-gray-500 text-center pb-1 text-sm`)}>{article.title}</p>
+                <div className={tw(`p-4 shadow-lg w-full mx-auto -mt-8 rounded-b z-30 relative`)}>
+                  <p className={tw(`text-white text-center pb-1 mt-4 font-bold`)}>{article.title}</p>
+                  <div className={tw(`text-center mt-1`)}>
+                    <a href={article.href} target="_blank" rel="noreferrer">
+                      <Button>Find out more</Button>
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
-            <span
+            {/* <span
               className={tw(
                 `-mt-8 pb-12 lg:mt-4 flex items-center text-xl
                 text-indigo-400 cursor-pointer z-30 hover:text-indigo-600`,
@@ -105,7 +108,7 @@ const CasesSection = () => (
             >
               See all case studies
               <Arrow className={tw(`h-6 w-6 fill-current ml-2`)} />
-            </span>
+            </span> */}
           </div>
         </div>
       </div>
