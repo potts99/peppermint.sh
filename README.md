@@ -1,37 +1,37 @@
-# The Shuffle Editor (https://shuffle.dev)
+# NINE4 TEMPLATE #2
+<img src="./img/main-page.png"></img>
 
-NOTE: npm commands overwrite the ./public directory.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## 1. Getting Started
+## Getting Started
 
-Project's source files are placed in ./src/ directory. 
-* ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
-* ./src/tailwind/ - Tailwind config file used to build the theme. Variables used in Theme Customizer are located in tailwind.config.js file.
+First, run the development server:
 
-All your pages (templates) are stored in separated .pug or .html files (depends on your export preferences)
-* ./src/pug/*.pug 
-* ./src/html/*.html 
-
-## 2. Installation
-
-```
-# Install dependencies
-npm install 
-
-# Run dev server with live preview (Browsersync)
-npm run watch
-
-# Or make a production build 
-npm run build
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## 3. Contact
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-If you have found any bugs in the Tailwind Builder, have any questions, 
-comments or ideas for new features feel free to contact us:
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-support@shuffle.dev
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-## 4. Credits & Special thanks
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-We use placeholders from https://unsplash.com/
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
